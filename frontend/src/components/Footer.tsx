@@ -1,0 +1,18 @@
+import React from 'react';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+
+const Footer = () => (
+  <footer className="footer mt-auto py-3 bg-light fixed-bottom" style={{ color: '#000' }}>
+    <Container fluid={true}>
+      <Row>
+        <Col>
+          Created with <span style={{ color: 'red' }}>&hearts;</span> by <a href="https://juffalow.com" target="_blank" rel="noopener noreferrer" style={{ color: '#000', textDecoration: 'none' }}>Matej <span style={{ color: 'red' }}>'juffalow'</span> Jellus</a> | 2021
+        </Col>
+      </Row>
+    </Container>
+  </footer>
+);
+
+export default React.memo(Footer);
